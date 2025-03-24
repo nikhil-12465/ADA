@@ -1,4 +1,4 @@
-Day 1 ----------------
+Day 1 ---------------->>>>
 
 problem : Magic Square --
 
@@ -48,7 +48,7 @@ If b is odd: result = a * half * half.
 
 
 
-Day2 ----------------------------------------
+Day2 ---------------------------------------->>>>
 
 
  Problem : Cosine Similarity : ------
@@ -140,7 +140,7 @@ Space Complexity
    O(log n) (due to recursion stack)
 
 
-Day 3 ----------------------------------------------------------
+Day 3 ---------------------------------------------------------->>>>>>>>>>>>>>
 
 Problem : fractional knapsack -----
 
@@ -157,7 +157,7 @@ Complexity
    Selection: O(n)
    Total: O(n²)
 
-
+Day 4 ----------------------------------------------------------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Problem : Matrix multiplication -----
 
 Overview
@@ -185,6 +185,61 @@ Complexity
    Standard method: O(n³)
    Strassen’s method: O(n².81) (Faster for large matrices)
 
+Problem : Convex Hull Problem -----
+
+Overview
+   This program finds the convex hull of a set of 2D points using the QuickHull algorithm, a divide & conquer approach.
+
+Steps
+  Find Extreme Points (leftmost & rightmost).
+  Partition Points into two sets.
+  Recursively Find Hull using the farthest points.
+
+Usage
+ Input: Number of points n and n (x, y) coordinates.
+ Output: Convex hull points.
+🔹 Efficient (O(n log n)) 🔹 Works well for large datasets
+
+Problem : Dijkastra algorithm ----
+
+This program finds the shortest path from a given source vertex to all other vertices using Dijkstra's Algorithm with an adjacency matrix.
+
+Input:
+  Number of vertices (n).
+  Randomly generated edge weights (INF for unreachable edges).
+  Source vertex (v).
+Output:
+  Adjacency matrix.
+  Shortest distances from the source to all vertices.
+
+** Optimizable with priority queues for better efficiency.
+
+Problem : Min Max using divide and conqure  -------------
+  Finds the minimum and maximum in an array using Divide and Conquer.
+Steps
+ Split array recursively.
+ Find min/max in each half.
+ Merge results.
+
+Time Complexity
+ O(n) (Efficient). 
+
+
+Day 5 ------------------------------------------------------------------------->>>>>>>>>>>>>>>>>>>>
+
+Problem : kruskal algorithm -----
+   Implements Kruskal’s Algorithm using Min Heap to find the Minimum Spanning Tree (MST) of a graph.
+Steps
+  Min-Heapify edges based on weight.
+  Extract minimum edge, check cycle using Union-Find.
+  Add edge to MST if no cycle.
+  Repeat until (n-1) edges are added.
+Time Complexity
+O(E log E) (Efficient). 
+
+
+
+  
    
 
 
