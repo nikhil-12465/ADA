@@ -51,7 +51,7 @@ If b is odd: result = a * half * half.
 Day2 ---------------------------------------->>>>
 
 
- Problem : Cosine Similarity : ------
+Problem : Cosine Similarity : ------
 
 This program calculates the cosine similarity between two text files based on word frequency vectors.
 
