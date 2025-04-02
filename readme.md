@@ -1,5 +1,5 @@
 # Day 1
-**1.Magic Square**
+##**1.Magic Square**
 
 **Objective** :  To generate odd order magic square 
 This C++ program generates an odd-order Magic Square using the Siamese Method. It starts from the middle of the first row, placing numbers sequentially while moving up-left. If the position is occupied, it moves down instead. The process repeats until the n × n grid is filled. The sum of each row, column, and diagonal remains constant. 
@@ -17,14 +17,21 @@ For the time complexity graph on the different input :
 ![Screenshot 2025-03-26 151539](https://github.com/user-attachments/assets/90fccd34-9520-4ee3-8214-b319855774d5)
 
 
+##**2. 1D Peak**
 
-Problem : Pick with LinearSearch :--
+**Objective** : This C++ program finds a peak element in an array using a binary search-based approach.
+This C++ program finds a peak element in an array using Binary Search.
+A peak is an element greater than or equal to its neighbors.
+•	If the array has only one element, it is the peak.
+•	The first or last element is a peak if it's greater than its only neighbor.
+•	Any middle element greater than both adjacent elements is also a peak.
+•	The program recursively searches in the direction where a peak is more likely to exist.
+The program prints the index of a peak element in logarithmic time O(log n).
 
-This C++ program finds a peak element in an array. A peak is an element greater than its neighbors.
-If the array has one element, it is the peak.
-The first or last element is a peak if it's greater than its only neighbor.
-Any element greater than both adjacent elements is also a peak.
-The program prints the first peak found or "Peak does not exist".
+
+![WhatsApp Image 2025-04-02 at 10 14 28_98055800](https://github.com/user-attachments/assets/e628891f-342e-434c-9735-1a024a7b6ddd)
+
+
 
  Problem : pick with BinarySearch :--
 
