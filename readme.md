@@ -3,6 +3,8 @@ Day 1 ---------------->>>>
 problem : Magic Square --
 
 This C++ program generates an odd-order Magic Square using the Siamese Method. It starts from the middle of the first row, placing numbers sequentially while moving up-left. If the position is occupied, it moves down instead. The process repeats until the n × n grid is filled. The sum of each row, column, and diagonal remains constant.
+![Screenshot 2025-03-26 151539](https://github.com/user-attachments/assets/90fccd34-9520-4ee3-8214-b319855774d5)
+
 
 Problem : Pick with LinearSearch :--
 
