@@ -33,39 +33,46 @@ The program prints the index of a peak element in logarithmic time O(log n).
 
 
 
- Problem : pick with BinarySearch :--
 
-This C++ program finds a peak element in an array using Binary Search.
-A peak is an element greater than or equal to its neighbors.
-If the array has only one element, it is the peak.
-The first or last element is a peak if it's greater than its only neighbor.
-Any middle element greater than both adjacent elements is also a peak.
-The program recursively searches in the direction where a peak is more likely to exist.
-The program prints the index of a peak element in logarithmic time O(log n).
 
-Problem :  Pick in 2D ----
+##**2D Peak**
 
+**Objective** : finding the 2D peak from an 2D array/Matrix
 This C++ program finds a peak element in a 2D matrix, where a peak is an element that is greater than its left, right, upper, and lower neighbors.
-Approach:
-Binary search on columns:
-  Pick the middle column.
-  Find the maximum element in this column.
-Check if it's a peak:
-  If it is greater than its left, right, upper, and lower neighbors, it's a peak.
-  Otherwise, move the search left or right where a larger element exists.
-This ensures an O(n log m) time complexity.
-Output:
-  The program prints the coordinates (row, column) of a peak element, or "No peak found".
+**Approach:**
+1.	Binary search on columns:
+o	Pick the middle column.
+o	Find the maximum element in this column.
+2.	Check if it's a peak:
+o	If it is greater than its left, right, upper, and lower neighbors, it's a peak.
+o	Otherwise, move the search left or right where a larger element exists.
+3.	This ensures an O(n log m) time complexity.
+**Output**:The program prints the coordinates (row, column) of a peak element, or "No peak found".
 
- 
- Problem : Power Calculation ---
- 
-This program calculates a^b using Exponentiation by Squaring, reducing time complexity to O(log b).
-Approach:
-If b == 0, return 1 (base case).
-Recursively compute power(a, b/2).
-If b is even: result = half * half.
-If b is odd: result = a * half * half.
+![WhatsApp Image 2025-04-02 at 10 14 28_10beabac](https://github.com/user-attachments/assets/92fc5b10-9b2c-4c02-a388-ce46d586cb73)
+
+
+
+
+
+## **Power Calculation using logn **
+
+**Objective**: To find the a to the power b without the n^2 complexity
+
+Power of a Number (Recursive Approach)
+This C++ program calculates a^b (a raised to the power of b) using recursion.
+**Approach:**
+•	Base Case: If b == 0, return 1.
+•	Recursive Case:
+o	If b is even, compute power(a, b/2) once and square it.
+o	If b is odd, multiply a with power(a, b/2) * power(a, b/2).
+**Time Complexity:** 
+•	This implementation is inefficient (O(2^log b)) because it computes power(a, b/2) twice.
+•	It can be optimized using exponentiation by squaring to O(log b).
+
+![WhatsApp Image 2025-04-02 at 10 27 25_b1acf11a](https://github.com/user-attachments/assets/883eb291-39a4-480b-9b0d-335e4c67ee25)
+
+
 
 
 
