@@ -1,4 +1,6 @@
-# Day 1
+# ADA lab Works :
+
+                                          # Day 1
 ##**1.Magic Square**
 
 **Objective** :  To generate odd order magic square 
@@ -35,7 +37,7 @@ The program prints the index of a peak element in logarithmic time O(log n).
 
 
 
-##**2D Peak**
+## 3. **2D Peak**
 
 **Objective** : finding the 2D peak from an 2D array/Matrix
 This C++ program finds a peak element in a 2D matrix, where a peak is an element that is greater than its left, right, upper, and lower neighbors.
@@ -76,46 +78,49 @@ o	If b is odd, multiply a with power(a, b/2) * power(a, b/2).
 
 
 
-Day2 ---------------------------------------->>>>
+                                            # Day2
 
+**1. Cosine similarity**
 
-Problem : Cosine Similarity : ------
-
+** Objective :**   To find the similarity between the the different files
 This program calculates the cosine similarity between two text files based on word frequency vectors.
+**How It Works:**
+1.	Reads two text files (vector1.txt and vector2.txt).
+2.	Processes text:
+o	Converts words to lowercase.
+o	Removes punctuation.
+o	Filters out common words (e.g., "is", "the", "and").
+3.	Creates word frequency vectors for both files.
+4.	Computes cosine similarity to measure text similarity.
 
-How It Works:
-Reads two text files (vector1.txt and vector2.txt).
-Processes text:
-Converts words to lowercase.
-Removes punctuation.
-Filters out common words (e.g., "is", "the", "and").
-Creates word frequency vectors for both files.
-Computes cosine similarity to measure text similarity.
-
-formula used :
-
-cosine similarity = A.B  / ||A|| * ||B||   
-A and B are word frequency vectors 
-
-Problem : Heap short -----------
-
-This program implements Heap Sort and measures its execution time for different input sizes, storing results in heap_sort_complexity.csv.
-
-Heap Sort Functions:
-
-  Heapify: Maintains max-heap.
-  Build Heap: Converts array into a heap.
-  Heap Sort: Sorts the array using heap properties.
-
-Performance Analysis:
-  Sorts arrays of increasing sizes (up to 100,000).
-  Measures execution time using chrono.
-  Saves results in CSV for graph plotting.
-
-Output: CSV file with Input_Size, Time_Taken.
+![image](https://github.com/user-attachments/assets/2e8434f0-b9cd-4b6f-a8e6-6c1c3bff78bf)
 
 
-Problem : Insertion ------------
+![Screenshot 2025-04-02 141218](https://github.com/user-attachments/assets/63026d1d-be70-4a76-a8af-0028c2d544e3)
+
+
+
+
+** 2. Heap sort **
+
+**Objective :** Understanding the heap sort and finding its time complexity
+Heap Sort Complexity Analysis
+This program analyzes the time complexity of Heap Sort by sorting arrays of different sizes and recording the execution time in a CSV file.
+**How It Works:**
+1.	Heap Sort Implementation:
+o	Heapify: Maintains the max-heap property.
+o	Build Heap: Converts an array into a max heap.
+o	Heap Sort: Extracts elements one by one and maintains the heap.
+**2.	Performance Analysis:**
+o	Runs Heap Sort on arrays of increasing sizes (up to 100,000).
+o	Uses chrono to measure execution time.
+o	Stores results in a CSV file (heap_sort_complexity.csv).
+
+![image](https://github.com/user-attachments/assets/fe6cd516-d385-43c9-8404-a02eee695fb8)
+
+
+
+**3. Insertion Sort ** 
 
 This program analyzes the time complexity of Insertion Sort under different cases:
 Worst Case: Reverse sorted array (O(n²))
@@ -127,34 +132,40 @@ Generates arrays of increasing sizes (up to 1 billion).
 Sorts them using Insertion Sort and measures execution time.
 Prints results (size vs. time taken).
 
+![image](https://github.com/user-attachments/assets/b7a00ea0-e09c-47f2-b439-a131fe5cc054)
 
-Problem : Merge sort  --------
 
-Overview :
+
+**4. Merge Sort **
+
+**Overview :**
    Merge Sort is a divide-and-conquer sorting algorithm that recursively splits an array into 
    halves, sorts them, and merges them back.
 
-Algorithm Steps :
+**Algorithm Steps :**
    Divide the array into two halves.
    Recursively sort each half.
    Merge the sorted halves.
    
-Time Complexity :
+**Time Complexity :**
    Best Case: O(n log n)
    Average Case: O(n log n)
    Worst Case: O(n log n)
 
-Space Complexity : 
+**Space Complexity :** 
    O(n) (due to auxiliary space for merging)
 
+   ![image](https://github.com/user-attachments/assets/52002dc7-d9c0-42ac-9667-df68274d0772)
 
-Problem : quick sort complexity ----------
+                                             # Day 3
 
-Overview :
+**1. Quick sort time complexity **
+
+**Overview :**
    Quick Sort is a divide-and-conquer sorting algorithm that selects a pivot, partitions the 
    array around it, and recursively sorts the subarrays.
 
-Algorithm Steps
+**Algorithm Steps**
   Select a pivot element.
   Partition the array so that elements smaller than the pivot are on the left and larger ones 
   on the right.
@@ -167,37 +178,40 @@ Time Complexity
 Space Complexity
    O(log n) (due to recursion stack)
 
+![image](https://github.com/user-attachments/assets/6f686b1c-4772-4beb-a1b0-d94cd03fcb70)
 
-Day 3 ---------------------------------------------------------->>>>>>>>>>>>>>
 
-Problem : fractional knapsack -----
+**2. fractional Knapsack ** 
 
 Solves the Fractional Knapsack Problem using a Greedy Algorithm by sorting items based on profit, weight, and profit-to-weight ratio.
 
-Steps:
+**Steps:**
    Generate random profit & weight.
    Compute profit-to-weight ratio.
    Sort & select items greedily.
    Calculate total profit.
 
-Complexity
+**Complexity**
    Sorting: O(n²)
    Selection: O(n)
    Total: O(n²)
 
-Day 4 ------------------------------------------------------------->>>>>>>>>>>>>>>>>>
-Problem : Matrix multiplication -----
+                                                 # Day 4
+                                                 
+**1. Matrix multiplication **
 
-Overview
+**Overview**
     Recursive n × n matrix multiplication using divide and conquer (for power-of-2 sizes).
 
-Complexity
+**Complexity**
     Standard Multiplication: O(n³)
     Recursive Approach: O(n³)
 
-Usage
+**Usage**
     Input matrix size (power of 2).
     Enter elements of matrices A & B.
+
+    
 
 Problem : strassen's method ------
 
