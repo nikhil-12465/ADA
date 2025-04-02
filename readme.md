@@ -41,14 +41,17 @@ The program prints the index of a peak element in logarithmic time O(log n).
 
 **Objective** : finding the 2D peak from an 2D array/Matrix
 This C++ program finds a peak element in a 2D matrix, where a peak is an element that is greater than its left, right, upper, and lower neighbors.
+
 **Approach:**
 1.	Binary search on columns:
 o	Pick the middle column.
 o	Find the maximum element in this column.
-2.	Check if it's a peak:
+
+3.	Check if it's a peak:
 o	If it is greater than its left, right, upper, and lower neighbors, it's a peak.
 o	Otherwise, move the search left or right where a larger element exists.
-3.	This ensures an O(n log m) time complexity.
+4.	This ensures an O(n log m) time complexity.
+
 **Output**:The program prints the coordinates (row, column) of a peak element, or "No peak found".
 
 ![WhatsApp Image 2025-04-02 at 10 14 28_10beabac](https://github.com/user-attachments/assets/92fc5b10-9b2c-4c02-a388-ce46d586cb73)
@@ -63,11 +66,13 @@ o	Otherwise, move the search left or right where a larger element exists.
 
 Power of a Number (Recursive Approach)
 This C++ program calculates a^b (a raised to the power of b) using recursion.
+
 **Approach:**
 •	Base Case: If b == 0, return 1.
 •	Recursive Case:
 o	If b is even, compute power(a, b/2) once and square it.
 o	If b is odd, multiply a with power(a, b/2) * power(a, b/2).
+
 **Time Complexity:** 
 •	This implementation is inefficient (O(2^log b)) because it computes power(a, b/2) twice.
 •	It can be optimized using exponentiation by squaring to O(log b).
@@ -106,11 +111,13 @@ o	Filters out common words (e.g., "is", "the", "and").
 **Objective :** Understanding the heap sort and finding its time complexity
 Heap Sort Complexity Analysis
 This program analyzes the time complexity of Heap Sort by sorting arrays of different sizes and recording the execution time in a CSV file.
+
 **How It Works:**
 1.	Heap Sort Implementation:
 o	Heapify: Maintains the max-heap property.
 o	Build Heap: Converts an array into a max heap.
 o	Heap Sort: Extracts elements one by one and maintains the heap.
+
 **2.	Performance Analysis:**
 o	Runs Heap Sort on arrays of increasing sizes (up to 100,000).
 o	Uses chrono to measure execution time.
@@ -171,11 +178,12 @@ Prints results (size vs. time taken).
   on the right.
   Recursively apply Quick Sort on the left and right subarrays.
 
-Time Complexity
+**Time Complexity**
    Best Case: O(n log n)
    Average Case: O(n log n)
    Worst Case: O(n²) (when the smallest or largest element is always chosen as pivot)
-Space Complexity
+   
+**Space Complexity**
    O(log n) (due to recursion stack)
 
 ![image](https://github.com/user-attachments/assets/6f686b1c-4772-4beb-a1b0-d94cd03fcb70)
@@ -238,10 +246,12 @@ Solves the Fractional Knapsack Problem using a Greedy Algorithm by sorting items
 
 **Overview**
 This program implements the QuickHull Algorithm to find the convex hull of a set of 2D points. The convex hull is the smallest convex boundary that encloses all given points.
+
 **Key Features**
 •	Efficient Divide & Conquer approach
 •	Faster than Graham’s scan & Jarvis March for large inputs
 •	Works in O(n log n) average case complexity
+
 **How It Works**
 1.	Find Extremes: Identifies leftmost and rightmost points.
 2.	Partition Points: Splits points into two sets (above & below the line).
@@ -256,10 +266,12 @@ This program implements the QuickHull Algorithm to find the convex hull of a set
 **4. Iterative Quick sort :**
    
  This program implements QuickSort using an iterative approach instead of recursion. It sorts an array of integers entered by the user. The program uses a stack to replace the recursive function calls, making it more memory-efficient compared to the traditional recursive QuickSort.
+ 
 **How It Works**
 1.	The user enters the size of the array and its elements.
 2.	The Iterative QuickSort algorithm is applied to sort the array.
 3.	The sorted array is displayed as output.
+
 **Algorithm**
 1.	Partitioning:
 o	Select the first element as the pivot.
@@ -268,6 +280,7 @@ o	Place the pivot in its correct position.
 2.	Iterative QuickSort using a Stack:
 o	Push the low and high indices onto the stack instead of using recursion.
 o	Keep processing subarrays until the stack is empty.
+
 **Time Complexity**
 •	Best/Average Case (O(n log n)) – When the pivot divides the array into nearly equal halves.
 •	Worst Case (O(n²)) – If the pivot is always the smallest or largest element (unbalanced partitioning).
@@ -279,6 +292,7 @@ o	Keep processing subarrays until the stack is empty.
 
 **Overview:**
 This program finds the minimum and maximum values in an array using the divide and conquer approach. Instead of a simple linear scan, it recursively divides the array into smaller parts, finds the min-max in each part, and then merges the results efficiently.
+
 **Algorithm Explanation**
 1.	Recursive Division:
 o	If the array has one element, it is both min and max.
@@ -286,11 +300,13 @@ o	Otherwise, the array is divided into two halves.
 o	The min-max of each half is computed recursively.
 2.	Merging Results:
 o	The min-max of both halves are compared, and the final min-max is determined.
+
 **Time Complexity Analysis**
 Let T(n) be the time complexity of the algorithm:
 •	Divide Step: The array is split into two halves → O(1).
 •	Recursive Calls: Two recursive calls for two halves → T(n) = 2T(n/2) + O(1).
 •	Merging Step: Takes O(1) constant time.
+
 **Solving the recurrence using the Master Theorem, we get:**
 •	Best & Average Case Complexity: O(n)
 •	Worst Case Complexity: O(n)
@@ -305,12 +321,16 @@ Let T(n) be the time complexity of the algorithm:
 **Overview : ** This program determines whether a given point (x, y) lies inside a triangle defined by three vertices (x1, y1), (x2, y2), (x3, y3) using the cross-product method.
 
 **Algorithm Explanation**
+
 **1.	Cross Product Calculation:**
+
 o	The cross product of two vectors determines the relative orientation of a point to a line.
 o	The sign of the cross product tells whether a point lies to the left or right of a directed line segment.
 **2.	Conditions for a Point Inside the Triangle:**
+
 o	If the point (x, y) lies inside the triangle, it must be on the same side of all three triangle edges.
 o	This means all three cross products have the same sign (either all positive or all negative).
+
 **Time Complexity Analysis**
 The algorithm performs a constant number of calculations (three cross-product evaluations and three comparisons), making it:
 •	Time Complexity: O(1) (Constant Time)
@@ -333,7 +353,9 @@ o	End Time
 o	Profit
 3.	The program sorts and selects activities using the three sorting strategies.
 4.	It prints the selected activities and the maximum number of non-overlapping activities for each approach.
+
 **Complexity Analysis**
+
 •	Sorting: O(n log n) (using std::sort()).
 •	Activity selection: O(n) (iterating through activities).
 •	Overall complexity: O(n log n) + O(n) = O(n log n). 
@@ -343,14 +365,18 @@ o	Profit
 
 **Overview**
 This C++ program finds the median of an unsorted array using the QuickSelect algorithm, an efficient selection algorithm similar to QuickSort. It avoids full sorting and finds the median in O(n) average time complexity.
+
 **How It Works**
+
 **1.	QuickSelect Algorithm**
 o	Selects the k-th smallest element without sorting the entire array.
 o	Uses a partitioning technique similar to QuickSort.
+
 **2.	Finding the Median**
 o	If the array has an odd number of elements, the median is the middle element.
 o	If the array has an even number of elements, the median is the average of the two middle elements.
 o	QuickSelect is used to find both elements efficiently.
+
 **Time Complexity Analysis**
 •	Best/Average Case: O(n) (Linear time, as we only partition necessary parts of the array).
 •	Worst Case: O(n²) (Occurs when always picking the worst pivot, but can be improved with random pivot selection). 
@@ -367,9 +393,12 @@ o	QuickSelect is used to find both elements efficiently.
 This C++ program implements Dijkstra’s Algorithm to find the shortest path from a single source vertex to all other vertices in a graph. It uses a randomly generated weighted adjacency matrix to represent the graph.
 
 **How It Works**
+
 1.	Graph Representation:
+   
 o	The graph is represented using a cost adjacency matrix (cost[i][j] stores the weight of the edge between vertex i and j).
 o	Edge weights are randomly assigned (values between 1 and 10, with higher values set as INF for disconnected edges).
+
 2.	Dijkstra’s Algorithm:
 o	A distance array (dist[]) stores the shortest known distance from the source vertex.
 o	A flag array (flag[]) keeps track of visited nodes.
