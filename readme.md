@@ -456,8 +456,37 @@ Prim’s Algorithm is a greedy algorithm used to find the Minimum Spanning Tree 
 •	Using priority queue (binary heap): O(E log V)
 
 
+                                                                                # day 7
 
 
+
+
+**1 . Multistage Graph (Minimum cost path)**
+
+**Overview:** This program finds the minimum cost path from source (1) to destination (n) in a multistage directed acyclic graph (DAG) using bottom-up dynamic programming.
+
+**How It Works**
+
+•	The graph is stored using:
+
+o	adj[]: adjacency list
+
+o	cost[][]: cost matrix
+
+•	fdist[i]: stores min cost from node i to destination.
+
+•	d[i]: helps reconstruct the path by storing the next node from i.
+
+**Time Complexity**
+
+•	O(V + E)
+
+o	For each node, we check all its outgoing edges once in reverse topological order.
+
+o	Works efficiently as the graph is acyclic and layered.
+
+
+![image](https://github.com/user-attachments/assets/b95d062f-d05d-4ce4-a08c-e6e874825303)
 
 
 
