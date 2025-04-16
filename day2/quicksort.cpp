@@ -130,7 +130,7 @@ int main()
 {
 
     long size = 125;
-    int N=size;
+  
 
 
     while (size != 100000)
@@ -139,8 +139,7 @@ int main()
     
     for (int i = 0; i < size; i++)
     {
-         a[i] =  N;
-         N--;
+         a[i] = i;;
     }
 
     int low = 0;

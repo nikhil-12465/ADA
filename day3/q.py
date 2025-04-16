@@ -2,8 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-worst_case_data = pd.read_csv("q.csv")  
-avg_case_data = pd.read_csv("q_avg.csv")  
+worst_case_data = pd.read_csv(r"c:\Users\nikhi\ada\day3\q.csv")  
+avg_case_data = pd.read_csv(r"c:\Users\nikhi\ada\day3\q_avg.csv")  
 
 
 plt.figure(figsize=(10, 6))
