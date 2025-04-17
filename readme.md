@@ -438,6 +438,9 @@ o	Continues until we have n-1 edges in the MST or the edges are exhausted.
 •	Overall Complexity: O(E log E) (Efficient for sparse graphs).
 
 
+![Screenshot 2025-04-17 160816](https://github.com/user-attachments/assets/9b981c92-a6b7-4193-825e-e48792a890a5)
+
+
 
 **2. Prim's algorithm **
 
@@ -454,6 +457,9 @@ Prim’s Algorithm is a greedy algorithm used to find the Minimum Spanning Tree 
 **Time Complexity**
 •	Using adjacency matrix: O(n²)
 •	Using priority queue (binary heap): O(E log V)
+
+![Screenshot 2025-04-17 160953](https://github.com/user-attachments/assets/f8802bc2-a828-4aa3-98d0-88329e1e6bad)
+
 
 
                                                        # day 7
@@ -515,8 +521,98 @@ O(n²), for storing the distance matrix of all pairs.
 
 
 
+                                        # day 8
+
+**1 – Travelling Sales Person Problem :**
+
+The Traveling Salesman Problem (TSP) is a classic optimization problem where:
+
+•	Given a list of cities and distances between each pair
+•	Find the shortest route that visits each city exactly once and returns to origin
+
+**Key Challenges :**
+
+1.	NP-Hard Complexity:
+   
+o	Naive brute-force approach has O(n!) complexity
+o	Dynamic programming reduces to O(n²·2ⁿ) - still exponential
+
+3.	Practical Limitations:
+
+o	For n > 15, becomes computationally expensive
+o	Memory usage grows exponentially with n
+
+5.	Python-Specific Issues:
+   
+o	Recursion depth limits
+o	Function call overhead in Python
+o	Cache/memoization memory usage
+
+**Solution Approach**
+
+**This implementation uses:**
+
+•	Memoization (via lru_cache)
+•	Bitmask technique for visited cities
+•	Dynamic Programming to avoid recomputation
+
+**Benchmarking Insights**
+
+1.	Theoretical vs Actual:
+o	Expected: O(n²·2ⁿ) complexity
+o	Observed: Closer to O(n·2ⁿ) due to Python overhead
 
 
+![Screenshot 2025-04-17 144652](https://github.com/user-attachments/assets/d8e18ca1-9c22-422f-9b96-f55d1449d8ff)
+
+
+
+**2 - 0/1 knapsack**
+
+**Overview**
+
+This C++ program implements a dynamic programming solution to the classic 0/1 Knapsack problem. The solution uses a merge-and-purge technique to efficiently explore the solution space while avoiding redundant computations.
+
+**Features**
+
+•	Dynamic Programming Solution: Implements the standard DP approach for 0/1 Knapsack
+•	Merge-Purge Optimization: Reduces the state space by eliminating dominated (p,w) pairs
+•	Solution Tracing: Reconstructs the optimal set of items after computing the maximum profit
+•	Benchmarking: Includes timing functionality to measure performance
+
+**Complexity Analysis**
+
+•	Time Complexity: O(n×2ⁿ) in worst case, O(n×W) pseudo-polynomial when weights are bounded
+•	Space Complexity: O(n×2ⁿ) for storing all solution sets
+
+
+![Screenshot 2025-04-17 150951](https://github.com/user-attachments/assets/581f77ce-afb9-46f1-afc3-d3f8cf824f87)
+
+
+
+
+
+**3 – Matrix chain multiplication **
+
+**Overview :** Solves the matrix chain ordering problem using dynamic programming to minimize scalar multiplications.
+
+**Features**
+
+•	 Optimal parenthesization
+•	 Complexity analysis (theoretical & empirical)
+•	 Visualization of complexity
+•	 C++ and Python implementations
+
+**Complexity**
+
+Metric	Complexity: 
+
+Time **	O(n³)**
+Space 	**O(n²)**
+
+ 
+
+![Screenshot 2025-04-17 153408](https://github.com/user-attachments/assets/801ff878-9abb-4e55-b637-3107c23bde41)
 
 
 
