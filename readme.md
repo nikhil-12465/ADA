@@ -456,7 +456,7 @@ Prim’s Algorithm is a greedy algorithm used to find the Minimum Spanning Tree 
 •	Using priority queue (binary heap): O(E log V)
 
 
-                                                                                # day 7
+                                                       # day 7
 
 
 
@@ -487,6 +487,33 @@ o	Works efficiently as the graph is acyclic and layered.
 
 
 ![image](https://github.com/user-attachments/assets/b95d062f-d05d-4ce4-a08c-e6e874825303)
+
+
+**2.  All pair shortest path :**
+**Overview : ** This program finds the shortest paths between all pairs of vertices in a directed graph using the Floyd-Warshall algorithm
+
+**Features:**
+
+•	Works for graphs with positive and negative edge weights
+•	Detects negative weight cycles
+•	Prints the shortest path distances between all pairs of nodes
+•	Simple and easy to understand
+
+**•	Time Complexity:**
+
+O(n³), where n is the number of vertices.
+This is because it uses three nested loops: one for each vertex as an intermediate, start, and end node.
+
+**•	Space Complexity:**
+
+O(n²), for storing the distance matrix of all pairs.
+
+![Screenshot 2025-04-17 002311](https://github.com/user-attachments/assets/237774a0-00a3-4305-901d-edf3abfa682e)
+
+![Screenshot 2025-04-17 002259](https://github.com/user-attachments/assets/4c319abc-f517-4a65-9167-1dd4fabf4959)
+
+
+
 
 
 
