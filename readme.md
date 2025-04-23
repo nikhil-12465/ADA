@@ -497,7 +497,15 @@ o	For each node, we check all its outgoing edges once in reverse topological ord
 o	Works efficiently as the graph is acyclic and layered.
 
 
-![image](https://github.com/user-attachments/assets/b95d062f-d05d-4ce4-a08c-e6e874825303)
+![image](https://github.com/user-attachments/assets/b95d062f-d05d-4ce4-a08c-e6e874825303) 
+
+
+### ** fibonacci with dynamic programming **
+
+time complexity : which is reduced to o(n) from o(2^n) using dp 
+
+![image](https://github.com/user-attachments/assets/2392202b-96e2-4e5a-b0f3-c66371680717)
+
 
 
 **2.  All pair shortest path :**
