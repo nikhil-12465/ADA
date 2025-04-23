@@ -1,7 +1,7 @@
 # ADA lab Works :
 
                                           # Day 1
-##**1.Magic Square**
+## **1.Magic Square**
 
 **Objective** :  To generate odd order magic square 
 This C++ program generates an odd-order Magic Square using the Siamese Method. It starts from the middle of the first row, placing numbers sequentially while moving up-left. If the position is occupied, it moves down instead. The process repeats until the n × n grid is filled. The sum of each row, column, and diagonal remains constant. 
@@ -19,7 +19,7 @@ For the time complexity graph on the different input :
 ![Screenshot 2025-03-26 151539](https://github.com/user-attachments/assets/90fccd34-9520-4ee3-8214-b319855774d5)
 
 
-##**2. 1D Peak**
+## **2. 1D Peak**
 
 **Objective** : This C++ program finds a peak element in an array using a binary search-based approach.
 This C++ program finds a peak element in an array using Binary Search.
@@ -85,7 +85,7 @@ o	If b is odd, multiply a with power(a, b/2) * power(a, b/2).
 
                                             # Day2
 
-**1. Cosine similarity**
+## **1. Cosine similarity**
 
 ** Objective :**   To find the similarity between the the different files
 This program calculates the cosine similarity between two text files based on word frequency vectors.
@@ -106,7 +106,7 @@ o	Filters out common words (e.g., "is", "the", "and").
 
 
 
-** 2. Heap sort **
+## ** 2. Heap sort **
 
 **Objective :** Understanding the heap sort and finding its time complexity
 Heap Sort Complexity Analysis
@@ -127,7 +127,7 @@ o	Stores results in a CSV file (heap_sort_complexity.csv).
 
 
 
-**3. Insertion Sort ** 
+## **3. Insertion Sort ** 
 
 This program analyzes the time complexity of Insertion Sort under different cases:
 Worst Case: Reverse sorted array (O(n²))
@@ -166,7 +166,7 @@ Prints results (size vs. time taken).
 
                                              # Day 3
 
-**1. Quick sort time complexity **
+## **1. Quick sort time complexity **
 
 **Overview :**
    Quick Sort is a divide-and-conquer sorting algorithm that selects a pivot, partitions the 
@@ -189,7 +189,7 @@ Prints results (size vs. time taken).
 ![image](https://github.com/user-attachments/assets/6f686b1c-4772-4beb-a1b0-d94cd03fcb70)
 
 
-**2. fractional Knapsack ** 
+## **2. fractional Knapsack ** 
 
 Solves the Fractional Knapsack Problem using a Greedy Algorithm by sorting items based on profit, weight, and profit-to-weight ratio.
 
@@ -206,7 +206,7 @@ Solves the Fractional Knapsack Problem using a Greedy Algorithm by sorting items
 
                                                  # Day 4 & 5 
                                                  
-**1. Matrix multiplication **
+## **1. Matrix multiplication **
 
 **Overview**
     Recursive n × n matrix multiplication using divide and conquer (for power-of-2 sizes).
@@ -224,7 +224,7 @@ Solves the Fractional Knapsack Problem using a Greedy Algorithm by sorting items
 
     
 
-**2. strasseson method **
+## **2. strasseson method **
 
 **Overview**
     This program implements Strassen’s Algorithm for fast n × n matrix multiplication, reducing 
@@ -242,7 +242,7 @@ Solves the Fractional Knapsack Problem using a Greedy Algorithm by sorting items
 
 
 
-**3. convex hull problem :**
+## **3. convex hull problem :**
 
 **Overview**
 This program implements the QuickHull Algorithm to find the convex hull of a set of 2D points. The convex hull is the smallest convex boundary that encloses all given points.
@@ -268,7 +268,7 @@ time complexity graph :
 
 
  
-**4. Iterative Quick sort :**
+## **4. Iterative Quick sort :**
    
  This program implements QuickSort using an iterative approach instead of recursion. It sorts an array of integers entered by the user. The program uses a stack to replace the recursive function calls, making it more memory-efficient compared to the traditional recursive QuickSort.
  
@@ -293,7 +293,7 @@ o	Keep processing subarrays until the stack is empty.
                           **graph is same like a recursive quick sort **
   	
 
-**5. Finding the min and maximum using devide and conquer :**
+## **5. Finding the min and maximum using devide and conquer :**
 
 **Overview:**
 This program finds the minimum and maximum values in an array using the divide and conquer approach. Instead of a simple linear scan, it recursively divides the array into smaller parts, finds the min-max in each part, and then merges the results efficiently.
@@ -321,7 +321,7 @@ Let T(n) be the time complexity of the algorithm:
   ![Screenshot 2025-04-02 154231](https://github.com/user-attachments/assets/45ceb117-a9c0-4c91-8a13-ce4e674eb994)
 
 
-**   6. Checking the point is in the triagle or not :**
+## **   6. Checking the point is in the triagle or not :**
 
 **Overview : ** This program determines whether a given point (x, y) lies inside a triangle defined by three vertices (x1, y1), (x2, y2), (x3, y3) using the cross-product method.
 
@@ -343,7 +343,7 @@ The algorithm performs a constant number of calculations (three cross-product ev
 
 
 
-**7. Activity Selection problem **
+## **7. Activity Selection problem **
 
 The Activity Selection Problem is a greedy algorithm problem where we aim to select the maximum number of non-overlapping activities that can be performed by activity selection problem 
 
@@ -366,7 +366,7 @@ o	Profit
 •	Overall complexity: O(n log n) + O(n) = O(n log n). 
 
 
-**8. Median of an array **
+## **8. Median of an array **
 
 **Overview**
 This C++ program finds the median of an unsorted array using the QuickSelect algorithm, an efficient selection algorithm similar to QuickSort. It avoids full sorting and finds the median in O(n) average time complexity.
@@ -392,7 +392,7 @@ o	QuickSelect is used to find both elements efficiently.
 
 
 
-**9. Dikastra's algorithm **
+## **9. Dikastra's algorithm **
 
 **Overview**
 This C++ program implements Dijkstra’s Algorithm to find the shortest path from a single source vertex to all other vertices in a graph. It uses a randomly generated weighted adjacency matrix to represent the graph.
@@ -420,7 +420,7 @@ o	At each step, the node with the minimum distance is selected, and its neighbor
 
                                                 # Day 6 
 
-**1 . Kruskal algorithm ** 
+## **1 . Kruskal algorithm ** 
 
 **Overview**
 This C++ program implements Kruskal’s Algorithm to find the Minimum Spanning Tree (MST) of a given graph. It uses a min-heap (priority queue) for efficient edge selection and a union-find data structure to detect cycles while adding edges to the MST.
@@ -447,7 +447,7 @@ o	Continues until we have n-1 edges in the MST or the edges are exhausted.
 
 
 
-**2. Prim's algorithm **
+## **2. Prim's algorithm **
 
 **Overview**
 
@@ -472,7 +472,7 @@ Prim’s Algorithm is a greedy algorithm used to find the Minimum Spanning Tree 
 
 
 
-**1 . Multistage Graph (Minimum cost path)**
+## **1 . Multistage Graph (Minimum cost path)**
 
 **Overview:** This program finds the minimum cost path from source (1) to destination (n) in a multistage directed acyclic graph (DAG) using bottom-up dynamic programming.
 
@@ -500,7 +500,7 @@ o	Works efficiently as the graph is acyclic and layered.
 ![image](https://github.com/user-attachments/assets/b95d062f-d05d-4ce4-a08c-e6e874825303) 
 
 
-### ** fibonacci with dynamic programming **
+## ** fibonacci with dynamic programming **
 
 time complexity : which is reduced to o(n) from o(2^n) using dp 
 
@@ -508,7 +508,7 @@ time complexity : which is reduced to o(n) from o(2^n) using dp
 
 
 
-**2.  All pair shortest path :**
+## **2.  All pair shortest path :**
 **Overview : ** This program finds the shortest paths between all pairs of vertices in a directed graph using the Floyd-Warshall algorithm
 
 **Features:**
@@ -536,7 +536,7 @@ O(n²), for storing the distance matrix of all pairs.
 
                                         # day 8
 
-**1 – Travelling Sales Person Problem :**
+## **1 – Travelling Sales Person Problem :**
 
 The Traveling Salesman Problem (TSP) is a classic optimization problem where:
 
@@ -580,7 +580,7 @@ o	Observed: Closer to O(n·2ⁿ) due to Python overhead
 
 
 
-**2 - 0/1 knapsack**
+## **2 - 0/1 knapsack**
 
 **Overview**
 
@@ -604,8 +604,7 @@ This C++ program implements a dynamic programming solution to the classic 0/1 Kn
 
 
 
-
-**3 – Matrix chain multiplication **
+ ## **3 – Matrix chain multiplication**
 
 **Overview :** Solves the matrix chain ordering problem using dynamic programming to minimize scalar multiplications.
 
