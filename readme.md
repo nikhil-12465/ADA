@@ -261,6 +261,11 @@ This program implements the QuickHull Algorithm to find the convex hull of a set
 2D visualisation :
 ![image](https://github.com/user-attachments/assets/9f922f5f-de6c-4a25-be91-914262e7632b)
 
+time complexity graph :
+
+![image](https://github.com/user-attachments/assets/bf309662-8536-4be9-9fe0-40c66b12a30f)
+
+
 
  
 **4. Iterative Quick sort :**
