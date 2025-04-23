@@ -628,9 +628,9 @@ Space 	**O(n²)**
 ![Screenshot 2025-04-17 153408](https://github.com/user-attachments/assets/801ff878-9abb-4e55-b637-3107c23bde41)
 
 
-                                               # Day 9
+                                                            # Day 9
 
-**1 – Longest common subsequence** 
+## **1 – Longest common subsequence** 
 
 **📝 Goal:**
 
@@ -660,7 +660,7 @@ Where m and n are the lengths of input strings X and Y.
  ![image](https://github.com/user-attachments/assets/dba7bc25-08f9-4da7-9ad9-0da810106251)
 
 
-**2 -  N-queens or 4 queens problem :**
+## **2 -  N-queens or 4 queens problem :**
 
 **Goal:**
 
