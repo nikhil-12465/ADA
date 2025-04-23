@@ -258,9 +258,9 @@ This program implements the QuickHull Algorithm to find the convex hull of a set
 3.	Recursive Hull Formation: Finds farthest points and recursively constructs the hull.
 **🔹 Efficient (O(n log n))**
 
-   
+2D visualisation :
+![image](https://github.com/user-attachments/assets/9f922f5f-de6c-4a25-be91-914262e7632b)
 
-![Screenshot 2025-04-02 152652](https://github.com/user-attachments/assets/c75bd2af-b513-4c9b-838e-7645b74f8440)
 
  
 **4. Iterative Quick sort :**
