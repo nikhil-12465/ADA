@@ -628,4 +628,61 @@ Space 	**O(n²)**
 ![Screenshot 2025-04-17 153408](https://github.com/user-attachments/assets/801ff878-9abb-4e55-b637-3107c23bde41)
 
 
+                                               # Day 9
+
+**1 – Longest common subsequence** 
+
+**📝 Goal:**
+
+Find the Longest Common Subsequence between two strings using Dynamic Programming.
+
+**How It Works:**
+
+•	Builds two tables:
+
+o	c[i][j] → stores length of LCS for substrings X[0..i-1] and Y[0..j-1].
+o	b[i][j] → stores the direction to trace the LCS.
+
+•	Print_LCS() uses table b to print the LCS string.
+
+** Example Input:**
+                  X = "ABCBDAB"
+                  Y = "BDCABA"
+**Output :**
+                  Length of LCS: 4
+                  LCS: BCBA
+**Complexity:**
+•	Time: O(m × n)
+•	Space: O(m × n)
+Where m and n are the lengths of input strings X and Y.
+
+
+ ![image](https://github.com/user-attachments/assets/dba7bc25-08f9-4da7-9ad9-0da810106251)
+
+
+**2 -  N-queens or 4 queens problem :**
+
+**Goal:**
+
+Place N queens on an N x N chessboard such that no two queens attack each other — not in the same row, column, or diagonal.
+
+**How It Works:**
+
+•	x[k] stores the column position of the queen placed in row k.
+•	Place(k, i) checks if a queen can be safely placed at row k, column i.
+•	Uses backtracking to explore all valid queen placements.
+
+**Complexity:**
+
+•	Time Complexity: O(N!) in the worst case
+•	Space Complexity: O(N) for storing positions (plus recursion stack)
+
+**Time complexity graph :**
+
+
+![image](https://github.com/user-attachments/assets/c23fbe74-3074-4800-a11e-d9a7ba2a2547)
+
+  
+
+
 
