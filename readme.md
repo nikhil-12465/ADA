@@ -631,7 +631,7 @@ Space 	**O(n²)**
 
 ## **1 – Longest common subsequence** 
 
-**📝 Goal:**
+** Goal:**
 
 Find the Longest Common Subsequence between two strings using Dynamic Programming.
 
@@ -681,7 +681,100 @@ Place N queens on an N x N chessboard such that no two queens attack each other 
 
 ![image](https://github.com/user-attachments/assets/c23fbe74-3074-4800-a11e-d9a7ba2a2547)
 
-  
+
+
+  #                                            day 10 
+ 
+## **  1 . Graph coloring  : **
+
+**Overview :**  This program checks whether a graph can be colored using m colors such that no two adjacent vertices share the same color.
+
+**Input**
+
+•	Number of vertices (n)
+•	Number of colors (m)
+•	Adjacency matrix of size n × n
+
+**Output**
+
+•	"Yes" with one valid coloring if possible
+•	"No" if coloring is not possible
+
+**•	Example : **
+
+**•	Input:**
+
+4 vertices
+3 colors
+
+Adjacency matrix:
+
+![image](https://github.com/user-attachments/assets/4530f1d9-848e-4763-b964-18bcc0f1d637)
+
+                                 
+**Output:**
+Yes, the graph is colorable with 3 colors.
+Vertex 1: Color 1
+Vertex 2: Color 2
+Vertex 3: Color 3
+Vertex 4: Color 1
+
+**Time Complexity**
+
+•	Worst Case: O(mⁿ)
+(Tries all color combinations for n vertices with m colors)
+
+Space Complexity
+
+•	O(n²) for the adjacency matrix
+•	O(n) for the color assignment array
+
+![image](https://github.com/user-attachments/assets/fea444d5-2a8e-4b72-b7cc-f7688d286607)
+
+
+ ## **2.	Hamiltonian graph :**
+
+**Overview : **  This code solves the Hamiltonian Cycle problem using backtracking in C++ and highlights the time complexity of the approach.
+
+**Description**
+
+•	A Hamiltonian Cycle visits each vertex exactly once and returns to the starting point.
+•	The code uses a brute-force/backtracking method to find a valid cycle.
+•	It helps visualize and understand the exponential time complexity of the problem.
+
+**•	Time Complexity**
+
+**Aspect	Complexity**
+
+Theoretical    	                     O((n - 1)!) (≈ O(n!))
+Why?	                               Try all permutations of vertices (excluding the fixed start)
+Practical Impact	                   Becomes slow for n > 10 due to factorial growth
+
+![image](https://github.com/user-attachments/assets/5c9576f2-4045-41c7-811a-2154c309853d)
+
+
+ ## **3.	Sum of subset :**
+ 
+**Overview : ** Given a set of weights and a target sum m, find all subsets of weights whose sum is exactly m using a backtracking approach.
+
+**Approach**
+
+•	The weights are sorted in ascending order to optimize pruning.
+•	At each step, include or exclude the current weight.
+•	Prune branches that exceed the sum or cannot reach it.
+
+**Time Complexity**
+
+**•	Worst-case: O(2^n)**
+o	The algorithm explores all possible subsets.
+
+**•	Average-case: Improved due to:**
+
+o	Sorting the weights
+o	Pruning with bounding functions (S + r - w[k] ≥ m)
+
+
+![image](https://github.com/user-attachments/assets/e9338429-4927-4eea-a943-af8a1c6346a4)
 
 
 
