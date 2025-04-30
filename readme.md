@@ -683,7 +683,7 @@ Place N queens on an N x N chessboard such that no two queens attack each other 
 
 
 
-  #                                            day 10 
+                                            day 10 
  
 ## **  1 . Graph coloring  : **
 
